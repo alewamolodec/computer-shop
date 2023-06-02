@@ -21,7 +21,7 @@ public class DesktopComputer {
     @Column(name = "price")
     private Double price;
     @Column(name = "count")
-    private Long count;
+    private Integer count;
     @Column(name = "category")
     private String category;
 }
