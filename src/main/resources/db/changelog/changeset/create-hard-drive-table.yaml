@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-hard-drive-table
+      author: alexey
+      changes:
+        - createTable:
+            tableName: hard_drive
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: series
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: manufacturer
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: count
+                  type: int
+              - column:
+                  name: size
+                  type: int
+                  constraints:
+                    nullable: false

@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-desktop-computer-table
+      author: alexey
+      changes:
+        - createTable:
+            tableName: desktop_computer
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: series
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: manufacturer
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: count
+                  type: int
+              - column:
+                  name: category
+                  type: varchar(50)
