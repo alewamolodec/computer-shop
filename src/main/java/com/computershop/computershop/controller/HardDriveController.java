@@ -22,7 +22,7 @@ public class HardDriveController {
         return service.getHardDriveById(id);
     }
 
-    @PostMapping(value = "/update")
+    @PutMapping(value = "/update")
     public Long updateHardDrive(@RequestBody HardDriveDto request) {
         return service.updateHardDrive(request);
     }

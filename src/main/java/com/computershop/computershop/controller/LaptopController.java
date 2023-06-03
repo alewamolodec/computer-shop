@@ -23,7 +23,7 @@ public class LaptopController {
         return service.getLaptopById(id);
     }
 
-    @PostMapping(value = "/update")
+    @PutMapping(value = "/update")
     public Long updateLaptop(@RequestBody LaptopDto request) {
         return service.updateLaptop(request);
     }
