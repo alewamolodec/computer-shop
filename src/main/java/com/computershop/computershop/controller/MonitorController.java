@@ -23,7 +23,7 @@ public class MonitorController {
         return service.getMonitorById(id);
     }
 
-    @PostMapping(value = "/update")
+    @PutMapping(value = "/update")
     public Long updateMonitor(@RequestBody MonitorDto request) {
         return service.updateMonitor(request);
     }

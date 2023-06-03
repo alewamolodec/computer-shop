@@ -23,7 +23,7 @@ public class DesktopComputerController {
         return service.getDesktopComputerById(id);
     }
 
-    @PostMapping(value = "/update")
+    @PutMapping(value = "/update")
     public Long updateDesktopComputer(@RequestBody DesktopComputerDto request) {
         return service.updateDesktopComputer(request);
     }
